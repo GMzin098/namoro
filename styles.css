@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1117; /* Cor de fundo escura */
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Garante que o conteúdo ocupe a altura da janela */
+    overflow-x: hidden; /* Remove barras de rolagem horizontais */
+}
+
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px auto; /* Centraliza o contêiner */
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    padding: 20px; /* Adiciona espaço interno */
+}
+
+/* Imagem */
+.container img {
+    max-width: 100%; /* A largura da imagem se adapta ao contêiner */}
+
+
+/* Texto */
+.container p {
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #d4d4d4; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+    text-align: justify; /* Justifica o texto para melhor leitura */
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Empilha as imagens */
+    align-items: center; /* Centraliza */
+    gap: 20px; /* Espaçamento entre imagens */
+    margin: 20px auto; /* Centraliza o contêiner */
+    max-width: 400px; /* Limite de largura */
+}
+
+.gallery-item {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção original */
+    aspect-ratio: auto; /* Garante que a proporção original seja respeitada */
+    border-radius: 10px; /* Bordas arredondadas */
+    object-fit: contain; /* Evita cortes */
+    object-position: center; /* Centraliza a imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destaque */
+}
+
+.counter {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #d4d4d4;
+    max-width: 90%; /* Limita a largura do texto */
+    word-wrap: break-word; /* Quebra texto longo */
+    margin: 20px 0; /* Adiciona espaçamento entre o texto e outros elementos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%; /* Usa a largura total em dispositivos menores */
+    }
+
+    .message {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+}
